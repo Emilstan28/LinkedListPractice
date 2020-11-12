@@ -4,26 +4,25 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+		Integer one = 1;
+		Integer two = 2;
+		Integer three = 3;
+		Integer four = 4;
+		Integer six = 6;
+		Integer five = 5;
 
-	    Employee janeJones = new Employee("Jane", "Jones", 123);
-	    Employee johnDoe = new  Employee("John", "Doe", 4567);
-	    Employee marySmith = new Employee("Mary", "Smith", 22);
-	    Employee mikeWilson =new Employee("Mike", "Wilson", 3245);
-
-    	EmployeeLinkedList list = new EmployeeLinkedList();
-    	list.addToFront(janeJones);
-    	list.addToFront(johnDoe);
-    	list.addToFront(marySmith);
-    	list.addToFront(mikeWilson);
-
-    	list.printList();
-
-		System.out.println("===============");
-
-		list.printListBackwards();
-
-		System.out.println("===================");
-
+		IntegerLinkedList list = new IntegerLinkedList();
+		list.insertSorted(three);
+		list.printList();
+		list.insertSorted(two);
+		list.printList();
+		list.insertSorted(one);
+		list.printList();
+		list.insertSorted(four);
+		list.printList();
+		list.insertSorted(six);
+		list.printList();
+		list.insertSorted(five);
 		list.printList();
     }
 }
